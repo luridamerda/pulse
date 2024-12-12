@@ -2,27 +2,21 @@
 name = "pulse"
 version = "0.1.0"
 description = "A simple music visualizer video creato"
+authors = ["Lurida Merda <pelixpazzosgravo69@gmail.com>"]
 license = "MIT"
-authors = ["Lurida Merda <you@example.com>"]
 readme = "README.md"
 homepage = "https://github.com/luridamerda/pulse"
 repository = "https://github.com/luridamerda/pulse"
 documentation = "https://github.com/luridamerda/pulse/docs"
 keywords = ["music", "visualizer", "video", "creator"]
-clssifiers = ["Topic :: Multimedia :: Video"]
-packages = [
-    { include = "pulse", from = "." }
-]
 
 [tool.poetry.scripts]
 pulse = "pulse.__main__:main"
 
 [tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
+python = "^3.12"
+pygobject = "^3.50.0"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
